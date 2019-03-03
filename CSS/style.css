@@ -1,8 +1,175 @@
-.box_1{
-    height: 100px;
-    border: 2px solid #000;
+@font-face {
+  font-family: 'OpenSansSemibold_1';
+  src: url('../font/OpenSansSemibold_1.eot');
+  src: url('../font/OpenSansSemibold_1.eot') format('embedded-opentype'), url('../font/OpenSansSemibold_1.woff2') format('woff2'), url('../font/OpenSansSemibold_1.woff') format('woff'), url('../font/OpenSansSemibold_1.ttf') format('truetype'), url('../font/OpenSansSemibold_1.svg#OpenSansSemibold_1') format('svg');
 }
-.box_2{
-    height: 50px;
-    background-color: green;
+@font-face {
+  font-family: 'OpenSansRegular_2';
+  src: url('../font/OpenSansRegular_2.eot');
+  src: url('../font/OpenSansRegular_2.eot') format('embedded-opentype'), url('../font/OpenSansRegular_2.woff2') format('woff2'), url('../font/OpenSansRegular_2.woff') format('woff'), url('../font/OpenSansRegular_2.ttf') format('truetype'), url('../font/OpenSansRegular_2.svg#OpenSansRegular_2') format('svg');
+}
+.gray_line {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 4px;
+  width: 34px;
+  background-color: #706b73;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+header {
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+body {
+  font-size: 14px;
+  font-family: "Open Sans Semibold";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main_logo {
+  margin-top: 82px;
+}
+.main_logo_border {
+  width: 149px;
+  height: 55px;
+  border: #706b73 4px solid;
+  text-align: center;
+  line-height: 47px;
+}
+.main_logo_border .logo_smart {
+  font-family: "Open Sans Semibold";
+  font-size: 38px;
+  color: #706b73;
+}
+.main_logo_border .logo_smart .word_s {
+  color: #fa9a87;
+}
+.main_bar {
+  margin-top: 82px;
+}
+.main_bar_nav {
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  /*кнопка всплывающего меню*/
+}
+.main_bar_nav .main_bar_icon {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 4px;
+  width: 34px;
+  background-color: #706b73;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.main_bar_nav .main_bar_icon:before {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 4px;
+  width: 34px;
+  background-color: #706b73;
+  top: 0;
+  right: 0;
+  position: absolute;
+  content: '';
+  transform: translateY(8px);
+}
+.main_bar_nav .main_bar_icon:after {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 4px;
+  width: 34px;
+  background-color: #706b73;
+  top: 0;
+  right: 0;
+  position: absolute;
+  content: '';
+  transform: translateY(16px);
+}
+.main_title {
+  margin-top: 10%;
+  text-align: center;
+}
+.main_title_head {
+  font-size: 50px;
+  color: #6e6e6e;
+}
+.main_title_head span {
+  color: #fc7254;
+}
+.main_title_text {
+  font-size: 16px;
+  font-family: "OpenSansRegular_2";
+  color: #7b7b7b;
+}
+.main_form {
+  background-color: white;
+  padding: 20px 35px;
+  margin-top: 150px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 0 0 57px 0 rgba(20, 20, 21, 0.2);
+}
+.main_form p {
+  font-size: 20px;
+  color: #6e6e6e;
+  text-align: center;
+  font-family: "OpenSansRegular_2";
+}
+.main_form p span {
+  color: #fc7254;
+}
+.main_form input,
+.main_form textarea {
+  font-size: 15px;
+  color: #a1a1a1;
+  font-family: "OpenSansRegular_2";
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #a1a1a1;
+  padding-bottom: 7px;
+  padding-top: 10%;
+}
+.main_form input :focus,
+.main_form textarea :focus {
+  outline: none;
+}
+.main_form textarea {
+  resize: none;
+}
+.main_form button {
+  border: none;
+  background-color: #ff5c36;
+  font-family: "OpenSansRegular_2";
+  font-size: 16px;
+  color: white;
+  width: 237px;
+  height: 55px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10%;
+}
+.main_form button :focus {
+  outline: none;
 }
